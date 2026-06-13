@@ -23,8 +23,8 @@ export default function GalleryCarousel({ images, showCaptions = true }: Props) 
   const touchStartY = useRef<number>(0);
   const dragging = useRef(false);
 
-  const prev = useCallback(() => setCurrent((i) => (i - 1 + images.length) % images.length), [images.length]);
-  const next = useCallback(() => setCurrent((i) => (i + 1) % images.length), [images.length]);
+  const prev = useCallback(() => { setCurrent((i) => (i - 1 + images.length) % images.length); }, [images.length]);
+  const next = useCallback(() => { setCurrent((i) => (i + 1) % images.length); }, [images.length]);
 
   const onTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;

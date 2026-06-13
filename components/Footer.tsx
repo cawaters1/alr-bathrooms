@@ -5,6 +5,7 @@ const services = [
   { label: "Bathroom Installation", href: "/services/bathroom-installation" },
   { label: "Bathroom Design", href: "/services/bathroom-design" },
   { label: "Free Estimate", href: "/free-estimate" },
+  { label: "Cost Guide", href: "/bathroom-cost-guide" },
   { label: "Our Process", href: "/process" },
   { label: "Gallery", href: "/gallery" },
 ];

@@ -12,6 +12,7 @@ const nav = [
     children: [
       { label: "Bathroom Installation", href: "/services/bathroom-installation" },
       { label: "Bathroom Design", href: "/services/bathroom-design" },
+      { label: "Cost Guide", href: "/bathroom-cost-guide" },
     ],
   },
   { label: "Gallery", href: "/gallery" },
