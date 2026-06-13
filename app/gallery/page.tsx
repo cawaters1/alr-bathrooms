@@ -19,11 +19,25 @@ const images = [
     detail: "Arabescato marble · Freestanding clawfoot bath · Polished brass fittings",
   },
   {
+    src: "/images/bathroom-5.jpg",
+    alt: "Spacious marble bathroom with freestanding bath, brass-framed glass shower enclosure and smart TV",
+    title: "Marble Master Suite",
+    location: "Guildford, Surrey",
+    detail: "Marble tiles · Brass shower enclosure · Freestanding bath · Smart TV",
+  },
+  {
     src: "/images/bathroom-1.jpg",
     alt: "Dark navy vanity unit with Carrara marble vessel sink, round walnut mirror and amber wall sconces",
     title: "Bespoke Vanity",
     location: "Cobham, Surrey",
     detail: "Carrara vessel sink · Brass tap · Bespoke dark cabinetry · Walnut mirror",
+  },
+  {
+    src: "/images/bathroom-7.jpg",
+    alt: "Marble shower enclosure with brass frame, overhead rain shower and illuminated niche shelf",
+    title: "Brass-Framed Shower",
+    location: "Cobham, Surrey",
+    detail: "Large marble tiles · Brass frame · Rain shower · Illuminated niche shelf",
   },
   {
     src: "/images/bathroom-2.jpg",
@@ -33,11 +47,25 @@ const images = [
     detail: "Large-format stone tiles · Brass hardware · Wall-hung sanitaryware · Designer bath",
   },
   {
+    src: "/images/bathroom-6.jpg",
+    alt: "Victorian cloakroom with wall panelling, brass oval mirror, gold heated towel rail and chevron marble floor",
+    title: "Victorian Cloakroom",
+    location: "Esher, Surrey",
+    detail: "Wall panelling · Brass fittings · Chevron marble floor · Gold towel rail",
+  },
+  {
     src: "/images/bathroom-3.jpg",
     alt: "Rose marble bathroom with brass rain shower head, dark vanity unit and geometric chevron floor tiles",
     title: "Rose Marble & Brass",
     location: "Wimbledon",
     detail: "Rose onyx marble · Brass rain shower · Geometric chevron floor tiles",
+  },
+  {
+    src: "/images/bathroom-8.jpg",
+    alt: "Artisan star-pattern tiled shower room with traditional brass shower column and gold heated towel rail",
+    title: "Star-Tile Shower Room",
+    location: "Kingston upon Thames",
+    detail: "Artisan star tiles · Traditional brass shower · Gold heated towel rail",
   },
 ];
 

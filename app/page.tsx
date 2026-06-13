@@ -15,9 +15,13 @@ import {
 
 const galleryImages = [
   { src: "/images/bathroom-4.jpg", alt: "Roll-top clawfoot bath with Arabescato marble and polished brass fittings", title: "Victorian Marble Suite", location: "Richmond", detail: "Arabescato marble · Clawfoot bath · Polished brass" },
+  { src: "/images/bathroom-5.jpg", alt: "Spacious marble bathroom with freestanding bath, brass-framed glass shower enclosure and smart TV", title: "Marble Master Suite", location: "Guildford, Surrey", detail: "Marble tiles · Brass shower enclosure · Freestanding bath · Smart TV" },
   { src: "/images/bathroom-1.jpg", alt: "Dark navy vanity with Carrara marble vessel sink and warm wall sconces", title: "Bespoke Vanity", location: "Cobham, Surrey", detail: "Carrara vessel sink · Brass tap · Bespoke cabinetry" },
+  { src: "/images/bathroom-7.jpg", alt: "Marble shower enclosure with brass frame, overhead rain shower and illuminated niche shelf", title: "Brass-Framed Shower", location: "Cobham, Surrey", detail: "Large marble tiles · Brass frame · Rain shower · Illuminated niche" },
   { src: "/images/bathroom-2.jpg", alt: "Spacious luxury bathroom with large stone tiles and designer bath surround", title: "Contemporary Stone Suite", location: "Esher, Surrey", detail: "Large-format stone · Brass hardware · Wall-hung sanitaryware" },
+  { src: "/images/bathroom-6.jpg", alt: "Victorian cloakroom with wall panelling, brass oval mirror, gold heated towel rail and chevron marble floor", title: "Victorian Cloakroom", location: "Esher, Surrey", detail: "Wall panelling · Brass fittings · Chevron marble floor · Gold towel rail" },
   { src: "/images/bathroom-3.jpg", alt: "Rose marble bathroom with brass rain shower and dark vanity unit", title: "Rose Marble & Brass", location: "Wimbledon", detail: "Rose onyx marble · Brass rain shower · Chevron floor tiles" },
+  { src: "/images/bathroom-8.jpg", alt: "Artisan star-pattern tiled shower room with traditional brass shower column and gold heated towel rail", title: "Star-Tile Shower Room", location: "Kingston upon Thames", detail: "Artisan star tiles · Traditional brass shower · Gold heated towel rail" },
 ];
 
 export const metadata: Metadata = {
