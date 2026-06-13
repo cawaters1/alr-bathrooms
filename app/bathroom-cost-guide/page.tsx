@@ -219,13 +219,13 @@ export default function BathroomCostGuidePage() {
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <Link
               href="/gallery"
-              className="inline-flex items-center justify-center gap-2 border border-brand text-brand font-bold px-6 py-3 hover:bg-brand hover:text-white transition-colors text-sm"
+              className="inline-flex items-center justify-center gap-2 border border-brand text-brand font-bold px-6 py-3 rounded-xl shadow-sm hover:bg-brand hover:text-white transition-colors text-sm"
             >
               View Our Work <ArrowRight size={14} />
             </Link>
             <Link
               href="/free-estimate"
-              className="inline-flex items-center justify-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-6 py-3 transition-colors text-sm"
+              className="inline-flex items-center justify-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-6 py-3 rounded-xl shadow-sm transition-colors text-sm"
             >
               Get a Free Estimate <ArrowRight size={14} />
             </Link>
@@ -259,13 +259,13 @@ export default function BathroomCostGuidePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/free-estimate"
-              className="inline-flex items-center justify-center gap-2 bg-[#C9A97A] text-white font-bold px-8 py-4 hover:bg-[#B8955A] transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-[#C9A97A] text-white font-bold px-8 py-4 rounded-xl shadow-md hover:bg-[#B8955A] transition-colors"
             >
               Book Free Estimate <ArrowRight size={15} />
             </Link>
             <a
               href="tel:07934679117"
-              className="inline-flex items-center justify-center gap-2 border border-[#2A3355] text-white font-bold px-8 py-4 hover:border-[#C9A97A] transition-colors"
+              className="inline-flex items-center justify-center gap-2 border border-[#2A3355] text-white font-bold px-8 py-4 rounded-xl shadow-md hover:border-[#C9A97A] transition-colors"
             >
               <Phone size={15} /> 07934 679117
             </a>

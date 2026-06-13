@@ -129,7 +129,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={submitting}
-          className="flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] disabled:opacity-50 text-white font-bold px-6 py-3 transition-colors"
+          className="flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] disabled:opacity-50 text-white font-bold px-6 py-3 rounded-xl shadow-sm transition-colors"
         >
           {submitting ? "Sending..." : "Send Message"}
           {!submitting && <ArrowRight size={15} />}

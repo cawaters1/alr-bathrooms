@@ -117,7 +117,7 @@ export default function GalleryPage() {
               <div className="pt-4">
                 <Link
                   href="/free-estimate"
-                  className="inline-flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-6 py-3 transition-colors"
+                  className="inline-flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-6 py-3 rounded-xl shadow-sm transition-colors"
                 >
                   Book Free Estimate <ArrowRight size={14} />
                 </Link>
@@ -135,7 +135,7 @@ export default function GalleryPage() {
           </p>
           <Link
             href="/free-estimate"
-            className="inline-flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-8 py-4 transition-colors"
+            className="inline-flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-8 py-4 rounded-xl shadow-md transition-colors"
           >
             Book Free Estimate <ArrowRight size={15} />
           </Link>

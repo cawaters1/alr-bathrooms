@@ -330,7 +330,7 @@ export default function HomePage() {
           <div className="text-center mt-12">
             <Link
               href="/free-estimate"
-              className="inline-flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-8 py-4 transition-colors"
+              className="inline-flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-8 py-4 rounded-xl shadow-md transition-colors"
             >
               Start With a Free Estimate <ArrowRight size={16} />
             </Link>
@@ -420,13 +420,13 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/free-estimate"
-              className="inline-flex items-center justify-center gap-2 bg-white text-[#C9A97A] font-bold px-8 py-4 hover:bg-[#F8F6F2] transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-white text-[#C9A97A] font-bold px-8 py-4 rounded-xl shadow-md hover:bg-[#F8F6F2] transition-colors"
             >
               Book Free Estimate <ArrowRight size={16} />
             </Link>
             <a
               href="tel:07934679117"
-              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-bold px-8 py-4 hover:bg-white/10 transition-colors"
+              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-bold px-8 py-4 rounded-xl shadow-md hover:bg-white/10 transition-colors"
             >
               <Phone size={16} />
               07934 679117

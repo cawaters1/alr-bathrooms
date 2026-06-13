@@ -6,7 +6,7 @@ export default function FloatingCTA() {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       <Link
         href="/free-estimate"
-        className="flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white text-sm font-bold px-5 py-3 shadow-xl transition-all hover:scale-105"
+        className="flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white text-sm font-bold px-5 py-3 rounded-full shadow-xl transition-all hover:scale-105"
         aria-label="Get a free estimate"
       >
         Free Estimate
@@ -15,7 +15,7 @@ export default function FloatingCTA() {
         href="https://wa.me/447934679117?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20bathroom%20installation."
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white text-sm font-bold px-5 py-3 shadow-xl transition-all hover:scale-105"
+        className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white text-sm font-bold px-5 py-3 rounded-full shadow-xl transition-all hover:scale-105"
         aria-label="WhatsApp ALR Bathrooms"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -25,7 +25,7 @@ export default function FloatingCTA() {
       </a>
       <a
         href="tel:07934679117"
-        className="flex items-center justify-center gap-2 bg-brand hover:bg-[#243360] text-white text-sm font-bold px-5 py-3 shadow-xl transition-all hover:scale-105"
+        className="flex items-center justify-center gap-2 bg-brand hover:bg-[#243360] text-white text-sm font-bold px-5 py-3 rounded-full shadow-xl transition-all hover:scale-105"
         aria-label="Call ALR Bathrooms"
       >
         <Phone size={15} />

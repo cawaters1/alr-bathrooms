@@ -180,7 +180,7 @@ export default function FreeEstimateForm() {
               type="button"
               disabled={!form.bathroomType}
               onClick={() => setStep(2)}
-              className="flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-6 py-3 transition-colors"
+              className="flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-6 py-3 rounded-xl shadow-sm transition-colors"
             >
               Next Step <ArrowRight size={15} />
             </button>
@@ -241,7 +241,7 @@ export default function FreeEstimateForm() {
               <button
                 type="button"
                 onClick={() => setStep(1)}
-                className="border border-[#EDEAE3] text-brand font-bold px-6 py-3 hover:border-brand transition-colors text-sm"
+                className="border border-[#EDEAE3] text-brand font-bold px-6 py-3 rounded-xl shadow-sm hover:border-brand transition-colors text-sm"
               >
                 Back
               </button>
@@ -249,7 +249,7 @@ export default function FreeEstimateForm() {
                 type="button"
                 disabled={!form.budget || !form.timescale}
                 onClick={() => setStep(3)}
-                className="flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-6 py-3 transition-colors"
+                className="flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-6 py-3 rounded-xl shadow-sm transition-colors"
               >
                 Next Step <ArrowRight size={15} />
               </button>
@@ -323,14 +323,14 @@ export default function FreeEstimateForm() {
               <button
                 type="button"
                 onClick={() => setStep(2)}
-                className="border border-[#EDEAE3] text-brand font-bold px-6 py-3 hover:border-brand transition-colors text-sm"
+                className="border border-[#EDEAE3] text-brand font-bold px-6 py-3 rounded-xl shadow-sm hover:border-brand transition-colors text-sm"
               >
                 Back
               </button>
               <button
                 type="submit"
                 disabled={submitting || !form.name || !form.phone || !form.email}
-                className="flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold px-6 py-3 transition-colors"
+                className="flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold px-6 py-3 rounded-xl shadow-sm transition-colors"
               >
                 {submitting ? "Sending..." : "Request Free Estimate"}
                 {!submitting && <ArrowRight size={15} />}

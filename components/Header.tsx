@@ -126,7 +126,7 @@ export default function Header() {
               </a>
               <Link
                 href="/free-estimate"
-                className="hidden sm:block bg-[#C9A97A] hover:bg-[#B8955A] text-white text-sm font-bold px-5 py-2.5 transition-colors"
+                className="hidden sm:block bg-[#C9A97A] hover:bg-[#B8955A] text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-sm transition-colors"
               >
                 Free Estimate
               </Link>
@@ -177,7 +177,7 @@ export default function Header() {
                 <Link
                   href="/free-estimate"
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-center bg-[#C9A97A] text-white font-bold py-3 text-sm"
+                  className="flex items-center justify-center bg-[#C9A97A] text-white font-bold py-3 rounded-xl text-sm"
                 >
                   Free Estimate
                 </Link>

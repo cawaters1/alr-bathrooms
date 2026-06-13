@@ -76,7 +76,7 @@ export default function AboutPage() {
               <div className="mt-8">
                 <Link
                   href="/free-estimate"
-                  className="inline-flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-6 py-3 transition-colors"
+                  className="inline-flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-6 py-3 rounded-xl shadow-sm transition-colors"
                 >
                   Get Your Free Estimate <ArrowRight size={15} />
                 </Link>
@@ -150,7 +150,7 @@ export default function AboutPage() {
             </Link>
             <a
               href="tel:07934679117"
-              className="inline-flex items-center justify-center gap-2 border border-[#2A3355] text-white font-bold px-8 py-4 hover:border-[#C9A97A] transition-colors"
+              className="inline-flex items-center justify-center gap-2 border border-[#2A3355] text-white font-bold px-8 py-4 rounded-xl shadow-md hover:border-[#C9A97A] transition-colors"
             >
               <Phone size={15} /> 07934 679117
             </a>

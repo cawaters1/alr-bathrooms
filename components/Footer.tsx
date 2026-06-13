@@ -91,7 +91,7 @@ export default function Footer() {
             </div>
             <Link
               href="/free-estimate"
-              className="inline-block bg-[#C9A97A] hover:bg-[#B8955A] text-white text-sm font-bold px-5 py-2.5 transition-colors"
+              className="inline-block bg-[#C9A97A] hover:bg-[#B8955A] text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-sm transition-colors"
             >
               Book Free Estimate
             </Link>

@@ -80,7 +80,7 @@ export default function ServicesPage() {
                 </ul>
                 <Link
                   href={s.href}
-                  className="inline-flex items-center gap-2 bg-brand hover:bg-[#243360] text-white font-bold px-6 py-3 transition-colors"
+                  className="inline-flex items-center gap-2 bg-brand hover:bg-[#243360] text-white font-bold px-6 py-3 rounded-xl shadow-sm transition-colors"
                 >
                   Learn More <ArrowRight size={14} />
                 </Link>
@@ -101,7 +101,7 @@ export default function ServicesPage() {
           </p>
           <Link
             href="/free-estimate"
-            className="inline-flex items-center gap-2 bg-white text-[#C9A97A] font-bold px-8 py-4 hover:bg-[#F8F6F2] transition-colors"
+            className="inline-flex items-center gap-2 bg-white text-[#C9A97A] font-bold px-8 py-4 rounded-xl shadow-md hover:bg-[#F8F6F2] transition-colors"
           >
             Book Free Estimate <ArrowRight size={15} />
           </Link>

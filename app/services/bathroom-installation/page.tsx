@@ -101,13 +101,13 @@ export default function BathroomInstallationPage() {
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/free-estimate"
-                  className="inline-flex items-center justify-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-6 py-3 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-6 py-3 rounded-xl shadow-sm transition-colors"
                 >
                   Book Free Estimate <ArrowRight size={14} />
                 </Link>
                 <a
                   href="tel:07934679117"
-                  className="inline-flex items-center justify-center gap-2 border border-[#EDEAE3] text-brand font-bold px-6 py-3 hover:border-brand transition-colors"
+                  className="inline-flex items-center justify-center gap-2 border border-[#EDEAE3] text-brand font-bold px-6 py-3 rounded-xl shadow-sm hover:border-brand transition-colors"
                 >
                   <Phone size={14} /> 07934 679117
                 </a>
@@ -180,7 +180,7 @@ export default function BathroomInstallationPage() {
             <Link href="/free-estimate" className="inline-flex items-center justify-center gap-2 bg-[#C9A97A] text-white font-bold px-8 py-4">
               Book Free Estimate <ArrowRight size={15} />
             </Link>
-            <a href="tel:07934679117" className="inline-flex items-center justify-center gap-2 border border-[#2A3355] text-white font-bold px-8 py-4 hover:border-[#C9A97A] transition-colors">
+            <a href="tel:07934679117" className="inline-flex items-center justify-center gap-2 border border-[#2A3355] text-white font-bold px-8 py-4 rounded-xl shadow-md hover:border-[#C9A97A] transition-colors">
               <Phone size={15} /> 07934 679117
             </a>
           </div>

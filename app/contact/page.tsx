@@ -90,7 +90,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href="tel:07934679117"
-                  className="inline-flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-5 py-2.5 text-sm transition-colors"
+                  className="inline-flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-5 py-2.5 rounded-xl shadow-sm text-sm transition-colors"
                 >
                   <Phone size={13} />
                   Call Now
