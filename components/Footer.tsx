@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Instagram } from "lucide-react";
 
 const services = [
   { label: "Bathroom Installation", href: "/services/bathroom-installation" },
@@ -43,6 +43,20 @@ export default function Footer() {
                 <Clock size={14} className="text-[#C9A97A] shrink-0" />
                 <span>Mon–Sun: 8:00am – 6:00pm</span>
               </div>
+            </div>
+            <div className="mt-5">
+              <p className="text-[10px] font-bold tracking-widest uppercase text-[#C9A97A] mb-3">Follow Us</p>
+              <a
+                href="https://www.instagram.com/alrbathrooms/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-[#8B8FA0] hover:text-[#C9A97A] transition-colors group"
+              >
+                <div className="w-8 h-8 rounded-lg bg-[#2A3355] group-hover:bg-[#C9A97A] flex items-center justify-center transition-colors">
+                  <Instagram size={15} className="text-[#C9A97A] group-hover:text-white transition-colors" />
+                </div>
+                @alrbathrooms
+              </a>
             </div>
           </div>
 
@@ -100,7 +114,18 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-[#2A3355] flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-[#5A5F6E]">
           <span>© {new Date().getFullYear()} ALR Bathrooms. All rights reserved.</span>
-          <span>8 Kilmiston Avenue, Shepperton, Surrey TW17 9DL</span>
+          <div className="flex items-center gap-4">
+            <span>8 Kilmiston Avenue, Shepperton, Surrey TW17 9DL</span>
+            <a
+              href="https://www.instagram.com/alrbathrooms/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="ALR Bathrooms on Instagram"
+              className="text-[#5A5F6E] hover:text-[#C9A97A] transition-colors"
+            >
+              <Instagram size={15} />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
