@@ -34,12 +34,12 @@ export default function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="bg-white border border-[#EDE9E3] p-12 text-center">
-        <div className="inline-flex items-center justify-center w-16 h-16 bg-[#F9F7F3] mb-6">
-          <CheckCircle2 size={32} className="text-[#C4A265]" />
+      <div className="bg-white border border-[#EDEAE3] p-12 text-center">
+        <div className="inline-flex items-center justify-center w-16 h-16 bg-[#F8F6F2] mb-6">
+          <CheckCircle2 size={32} className="text-[#C9A97A]" />
         </div>
         <h2 className="text-2xl font-black text-brand mb-3">Message Sent</h2>
-        <p className="text-[#8B7D72] leading-relaxed max-w-md mx-auto">
+        <p className="text-[#8B8FA0] leading-relaxed max-w-md mx-auto">
           Thank you for getting in touch. We&apos;ll get back to you as soon as possible —
           usually within a few hours.
         </p>
@@ -48,14 +48,14 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="bg-white border border-[#EDE9E3] p-8">
+    <div className="bg-white border border-[#EDEAE3] p-8">
       <h2 className="text-xl font-black text-brand mb-1">Send Us a Message</h2>
-      <p className="text-sm text-[#8B7D72] mb-6">We&apos;ll reply within a few hours.</p>
+      <p className="text-sm text-[#8B8FA0] mb-6">We&apos;ll reply within a few hours.</p>
 
       <form onSubmit={submit} className="space-y-5">
         <div className="grid sm:grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-bold tracking-widest uppercase text-[#8B7D72] mb-1.5">
+            <label className="block text-xs font-bold tracking-widest uppercase text-[#8B8FA0] mb-1.5">
               Full Name *
             </label>
             <input
@@ -64,11 +64,11 @@ export default function ContactForm() {
               value={form.name}
               onChange={set("name")}
               placeholder="Your name"
-              className="w-full border border-[#EDE9E3] px-4 py-3 text-sm text-brand focus:border-[#C4A265] outline-none"
+              className="w-full border border-[#EDEAE3] px-4 py-3 text-sm text-brand focus:border-[#C9A97A] outline-none"
             />
           </div>
           <div>
-            <label className="block text-xs font-bold tracking-widest uppercase text-[#8B7D72] mb-1.5">
+            <label className="block text-xs font-bold tracking-widest uppercase text-[#8B8FA0] mb-1.5">
               Phone Number
             </label>
             <input
@@ -76,13 +76,13 @@ export default function ContactForm() {
               value={form.phone}
               onChange={set("phone")}
               placeholder="07..."
-              className="w-full border border-[#EDE9E3] px-4 py-3 text-sm text-brand focus:border-[#C4A265] outline-none"
+              className="w-full border border-[#EDEAE3] px-4 py-3 text-sm text-brand focus:border-[#C9A97A] outline-none"
             />
           </div>
         </div>
 
         <div>
-          <label className="block text-xs font-bold tracking-widest uppercase text-[#8B7D72] mb-1.5">
+          <label className="block text-xs font-bold tracking-widest uppercase text-[#8B8FA0] mb-1.5">
             Email Address *
           </label>
           <input
@@ -91,18 +91,18 @@ export default function ContactForm() {
             value={form.email}
             onChange={set("email")}
             placeholder="you@example.com"
-            className="w-full border border-[#EDE9E3] px-4 py-3 text-sm text-brand focus:border-[#C4A265] outline-none"
+            className="w-full border border-[#EDEAE3] px-4 py-3 text-sm text-brand focus:border-[#C9A97A] outline-none"
           />
         </div>
 
         <div>
-          <label className="block text-xs font-bold tracking-widest uppercase text-[#8B7D72] mb-1.5">
+          <label className="block text-xs font-bold tracking-widest uppercase text-[#8B8FA0] mb-1.5">
             Subject
           </label>
           <select
             value={form.subject}
             onChange={set("subject")}
-            className="w-full border border-[#EDE9E3] px-4 py-3 text-sm text-brand focus:border-[#C4A265] outline-none bg-white"
+            className="w-full border border-[#EDEAE3] px-4 py-3 text-sm text-brand focus:border-[#C9A97A] outline-none bg-white"
           >
             <option value="">Select a subject</option>
             <option>Free Estimate Request</option>
@@ -113,7 +113,7 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="block text-xs font-bold tracking-widest uppercase text-[#8B7D72] mb-1.5">
+          <label className="block text-xs font-bold tracking-widest uppercase text-[#8B8FA0] mb-1.5">
             Message *
           </label>
           <textarea
@@ -122,14 +122,14 @@ export default function ContactForm() {
             value={form.message}
             onChange={set("message")}
             placeholder="Tell us about your project..."
-            className="w-full border border-[#EDE9E3] px-4 py-3 text-sm text-brand focus:border-[#C4A265] outline-none resize-none"
+            className="w-full border border-[#EDEAE3] px-4 py-3 text-sm text-brand focus:border-[#C9A97A] outline-none resize-none"
           />
         </div>
 
         <button
           type="submit"
           disabled={submitting}
-          className="flex items-center gap-2 bg-[#C4A265] hover:bg-[#B8935A] disabled:opacity-50 text-white font-bold px-6 py-3 transition-colors"
+          className="flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] disabled:opacity-50 text-white font-bold px-6 py-3 transition-colors"
         >
           {submitting ? "Sending..." : "Send Message"}
           {!submitting && <ArrowRight size={15} />}

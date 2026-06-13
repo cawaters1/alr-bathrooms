@@ -75,9 +75,9 @@ export default function AreasPage() {
 
       <section className="bg-brand py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-xs font-bold tracking-widest uppercase text-[#C4A265] mb-3">Coverage</p>
+          <p className="text-xs font-bold tracking-widest uppercase text-[#C9A97A] mb-3">Coverage</p>
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-4">Areas We Cover</h1>
-          <p className="text-[#8B7D72] text-lg max-w-2xl leading-relaxed">
+          <p className="text-[#8B8FA0] text-lg max-w-2xl leading-relaxed">
             Based in Shepperton, we provide bathroom design and installation services
             across Surrey and the surrounding areas.
           </p>
@@ -88,19 +88,19 @@ export default function AreasPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <p className="text-xs font-bold tracking-widest uppercase text-[#C4A265] mb-3">Main Areas</p>
+            <p className="text-xs font-bold tracking-widest uppercase text-[#C9A97A] mb-3">Main Areas</p>
             <h2 className="text-3xl font-black text-brand">Where We Work</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {primaryAreas.map((area) => (
-              <div key={area.name} className="border border-[#EDE9E3] p-6 hover:border-[#C4A265] transition-colors group">
+              <div key={area.name} className="border border-[#EDEAE3] p-6 hover:border-[#C9A97A] transition-colors group">
                 <div className="flex items-center gap-2 mb-3">
-                  <MapPin size={16} className="text-[#C4A265]" />
-                  <h3 className="font-bold text-brand group-hover:text-[#C4A265] transition-colors">
+                  <MapPin size={16} className="text-[#C9A97A]" />
+                  <h3 className="font-bold text-brand group-hover:text-[#C9A97A] transition-colors">
                     {area.name}
                   </h3>
                 </div>
-                <p className="text-xs text-[#8B7D72] leading-relaxed">{area.desc}</p>
+                <p className="text-xs text-[#8B8FA0] leading-relaxed">{area.desc}</p>
               </div>
             ))}
           </div>
@@ -108,19 +108,19 @@ export default function AreasPage() {
       </section>
 
       {/* Additional areas */}
-      <section className="py-16 bg-[#F9F7F3]">
+      <section className="py-16 bg-[#F8F6F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-black text-brand mb-8">Also Covering</h2>
           <div className="flex flex-wrap gap-2">
             {additionalAreas.map((area) => (
-              <div key={area} className="flex items-center gap-1.5 bg-white border border-[#EDE9E3] px-4 py-2.5 text-sm text-brand">
-                <MapPin size={11} className="text-[#C4A265]" />
+              <div key={area} className="flex items-center gap-1.5 bg-white border border-[#EDEAE3] px-4 py-2.5 text-sm text-brand">
+                <MapPin size={11} className="text-[#C9A97A]" />
                 {area}
               </div>
             ))}
           </div>
-          <p className="mt-6 text-sm text-[#8B7D72]">
-            Not sure if we cover your area? <a href="tel:07934679117" className="text-[#C4A265] font-semibold hover:underline">Call us on 07934 679117</a> and we&apos;ll let you know.
+          <p className="mt-6 text-sm text-[#8B8FA0]">
+            Not sure if we cover your area? <a href="tel:07934679117" className="text-[#C9A97A] font-semibold hover:underline">Call us on 07934 679117</a> and we&apos;ll let you know.
           </p>
         </div>
       </section>
@@ -129,7 +129,7 @@ export default function AreasPage() {
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-black text-brand mb-6">Bathroom Installation Across Surrey</h2>
-          <div className="space-y-4 text-[#8B7D72] leading-relaxed text-sm">
+          <div className="space-y-4 text-[#8B8FA0] leading-relaxed text-sm">
             <p>
               ALR Bathrooms is a Surrey-based bathroom design and installation specialist, operating from
               our base in Shepperton. We serve homeowners right across the county — from Guildford in the
@@ -153,14 +153,14 @@ export default function AreasPage() {
       <section className="py-16 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-black text-white mb-4">Serving Surrey. Available 7 Days.</h2>
-          <p className="text-[#8B7D72] mb-8">
+          <p className="text-[#8B8FA0] mb-8">
             Get a free estimate for your bathroom project — we cover all of Surrey and surrounding areas.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/free-estimate" className="inline-flex items-center justify-center gap-2 bg-[#C4A265] text-white font-bold px-8 py-4">
+            <Link href="/free-estimate" className="inline-flex items-center justify-center gap-2 bg-[#C9A97A] text-white font-bold px-8 py-4">
               Book Free Estimate <ArrowRight size={15} />
             </Link>
-            <a href="tel:07934679117" className="inline-flex items-center justify-center gap-2 border border-[#2A2A2E] text-white font-bold px-8 py-4 hover:border-[#C4A265] transition-colors">
+            <a href="tel:07934679117" className="inline-flex items-center justify-center gap-2 border border-[#2A3355] text-white font-bold px-8 py-4 hover:border-[#C9A97A] transition-colors">
               <Phone size={15} /> 07934 679117
             </a>
           </div>

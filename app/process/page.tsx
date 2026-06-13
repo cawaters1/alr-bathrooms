@@ -77,9 +77,9 @@ export default function ProcessPage() {
     <>
       <section className="bg-brand py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-xs font-bold tracking-widest uppercase text-[#C4A265] mb-3">How It Works</p>
+          <p className="text-xs font-bold tracking-widest uppercase text-[#C9A97A] mb-3">How It Works</p>
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-4">Our Process</h1>
-          <p className="text-[#8B7D72] text-lg max-w-2xl leading-relaxed">
+          <p className="text-[#8B8FA0] text-lg max-w-2xl leading-relaxed">
             From first enquiry to final handover — here&apos;s how a bathroom project with ALR Bathrooms works.
             Simple, stress-free and completely managed for you.
           </p>
@@ -93,26 +93,26 @@ export default function ProcessPage() {
               <div key={step.num} className="relative pl-16 pb-16">
                 {/* Vertical line */}
                 {i < steps.length - 1 && (
-                  <div className="absolute left-6 top-12 bottom-0 w-px bg-[#EDE9E3]" />
+                  <div className="absolute left-6 top-12 bottom-0 w-px bg-[#EDEAE3]" />
                 )}
                 {/* Number circle */}
                 <div className="absolute left-0 top-0 w-12 h-12 bg-brand flex items-center justify-center">
-                  <span className="text-[#C4A265] font-black text-sm">{step.num}</span>
+                  <span className="text-[#C9A97A] font-black text-sm">{step.num}</span>
                 </div>
 
                 <div className="flex flex-col sm:flex-row sm:items-start sm:gap-6">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <h2 className="text-xl font-black text-brand">{step.title}</h2>
-                      <span className="text-xs font-bold text-[#C4A265] bg-[#F9F7F3] px-2.5 py-1 border border-[#EDE9E3]">
+                      <span className="text-xs font-bold text-[#C9A97A] bg-[#F8F6F2] px-2.5 py-1 border border-[#EDEAE3]">
                         {step.duration}
                       </span>
                     </div>
-                    <p className="text-[#8B7D72] leading-relaxed mb-5">{step.desc}</p>
+                    <p className="text-[#8B8FA0] leading-relaxed mb-5">{step.desc}</p>
                     <ul className="space-y-2">
                       {step.detail.map((d) => (
                         <li key={d} className="flex items-start gap-2 text-sm text-brand">
-                          <span className="text-[#C4A265] mt-0.5">—</span>
+                          <span className="text-[#C9A97A] mt-0.5">—</span>
                           {d}
                         </li>
                       ))}
@@ -128,14 +128,14 @@ export default function ProcessPage() {
       <section className="py-16 bg-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-black text-white mb-4">Start Step One Today</h2>
-          <p className="text-[#8B7D72] mb-8">
+          <p className="text-[#8B8FA0] mb-8">
             Book your free consultation — available 7 days a week across Surrey.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/free-estimate" className="inline-flex items-center justify-center gap-2 bg-[#C4A265] text-white font-bold px-8 py-4">
+            <Link href="/free-estimate" className="inline-flex items-center justify-center gap-2 bg-[#C9A97A] text-white font-bold px-8 py-4">
               Book Free Consultation <ArrowRight size={15} />
             </Link>
-            <a href="tel:07934679117" className="inline-flex items-center justify-center gap-2 border border-[#2A2A2E] text-white font-bold px-8 py-4 hover:border-[#C4A265] transition-colors">
+            <a href="tel:07934679117" className="inline-flex items-center justify-center gap-2 border border-[#2A3355] text-white font-bold px-8 py-4 hover:border-[#C9A97A] transition-colors">
               <Phone size={15} /> 07934 679117
             </a>
           </div>

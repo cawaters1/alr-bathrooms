@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Star,
   CheckCircle2,
@@ -120,27 +121,27 @@ export default function HomePage() {
       {/* ── HERO ── */}
       <section className="relative bg-brand overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/bathroom-hero.jpg')] bg-cover bg-center opacity-20" />
-        <div className="absolute top-0 left-0 right-0 h-1 bg-[#C4A265]" />
+        <div className="absolute top-0 left-0 right-0 h-1 bg-[#C9A97A]" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-36">
           <div className="max-w-3xl">
             {/* Stars */}
             <div className="flex items-center gap-2 mb-6">
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} className="fill-[#C4A265] text-[#C4A265]" />
+                  <Star key={i} size={16} className="fill-[#C9A97A] text-[#C9A97A]" />
                 ))}
               </div>
-              <span className="text-[#C4A265] text-sm font-semibold tracking-wide">
+              <span className="text-[#C9A97A] text-sm font-semibold tracking-wide">
                 5-Star Rated · Surrey
               </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.05] mb-6 text-balance">
               Bathrooms Designed <br className="hidden sm:block" />
-              <span className="text-[#C4A265]">Built to Last.</span>
+              <span className="text-[#C9A97A]">Built to Last.</span>
             </h1>
 
-            <p className="text-lg text-[#8B7D72] leading-relaxed mb-8 max-w-xl">
+            <p className="text-lg text-[#8B8FA0] leading-relaxed mb-8 max-w-xl">
               Surrey&apos;s specialist bathroom designers and installers. We handle every detail —
               from first concept through to the finishing touches — so you don&apos;t have to.
             </p>
@@ -148,7 +149,7 @@ export default function HomePage() {
             <div className="flex flex-wrap gap-3 mb-10">
               {["Free Estimates", "Full Design Service", "Supply &amp; Install", "7 Days a Week"].map((t) => (
                 <div key={t} className="flex items-center gap-1.5 text-sm text-cream">
-                  <CheckCircle2 size={15} className="text-[#C4A265] shrink-0" />
+                  <CheckCircle2 size={15} className="text-[#C9A97A] shrink-0" />
                   <span dangerouslySetInnerHTML={{ __html: t }} />
                 </div>
               ))}
@@ -157,14 +158,14 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/free-estimate"
-                className="inline-flex items-center justify-center gap-2 bg-[#C4A265] hover:bg-[#B8935A] text-white font-bold px-8 py-4 text-base transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-8 py-4 text-base transition-colors"
               >
                 Book Your Free Estimate
                 <ArrowRight size={18} />
               </Link>
               <a
                 href="tel:07934679117"
-                className="inline-flex items-center justify-center gap-2 border border-[#2A2A2E] hover:border-[#C4A265] text-white font-bold px-8 py-4 text-base transition-colors"
+                className="inline-flex items-center justify-center gap-2 border border-[#2A3355] hover:border-[#C9A97A] text-white font-bold px-8 py-4 text-base transition-colors"
               >
                 <Phone size={16} />
                 07934 679117
@@ -175,13 +176,13 @@ export default function HomePage() {
       </section>
 
       {/* ── STATS BAR ── */}
-      <section className="bg-[#F9F7F3] border-b border-[#EDE9E3]">
+      <section className="bg-[#F8F6F2] border-b border-[#EDEAE3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((s) => (
               <div key={s.label} className="text-center">
                 <div className="text-3xl font-black text-brand mb-1">{s.value}</div>
-                <div className="text-xs font-semibold tracking-widest uppercase text-[#8B7D72]">{s.label}</div>
+                <div className="text-xs font-semibold tracking-widest uppercase text-[#8B8FA0]">{s.label}</div>
               </div>
             ))}
           </div>
@@ -192,11 +193,11 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mb-12">
-            <p className="text-xs font-bold tracking-widest uppercase text-[#C4A265] mb-3">What We Do</p>
+            <p className="text-xs font-bold tracking-widest uppercase text-[#C9A97A] mb-3">What We Do</p>
             <h2 className="text-3xl lg:text-4xl font-black text-brand mb-4">
               A Complete Bathroom Service
             </h2>
-            <p className="text-[#8B7D72] leading-relaxed">
+            <p className="text-[#8B8FA0] leading-relaxed">
               From initial design concept to final installation, we manage every aspect of your new bathroom — saving you time, stress and money.
             </p>
           </div>
@@ -205,15 +206,15 @@ export default function HomePage() {
               <Link
                 key={s.title}
                 href={s.href}
-                className="group border border-[#EDE9E3] p-8 hover:border-[#C4A265] hover:shadow-lg transition-all"
+                className="group border border-[#EDEAE3] p-8 hover:border-[#C9A97A] hover:shadow-lg transition-all"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-[#F9F7F3] group-hover:bg-[#C4A265] transition-colors mb-6">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-[#F8F6F2] group-hover:bg-[#C9A97A] transition-colors mb-6">
                   <s.icon size={22} className="text-brand group-hover:text-white transition-colors" />
                 </div>
-                <div className="text-[10px] font-bold tracking-widest uppercase text-[#C4A265] mb-2">{s.tag}</div>
+                <div className="text-[10px] font-bold tracking-widest uppercase text-[#C9A97A] mb-2">{s.tag}</div>
                 <h3 className="text-xl font-bold text-brand mb-3">{s.title}</h3>
-                <p className="text-sm text-[#8B7D72] leading-relaxed mb-4">{s.desc}</p>
-                <div className="flex items-center gap-1 text-sm font-semibold text-brand group-hover:text-[#C4A265] transition-colors">
+                <p className="text-sm text-[#8B8FA0] leading-relaxed mb-4">{s.desc}</p>
+                <div className="flex items-center gap-1 text-sm font-semibold text-brand group-hover:text-[#C9A97A] transition-colors">
                   Learn more <ArrowRight size={14} />
                 </div>
               </Link>
@@ -223,15 +224,15 @@ export default function HomePage() {
       </section>
 
       {/* ── WHY ALR ── */}
-      <section className="py-20 bg-[#F9F7F3]">
+      <section className="py-20 bg-[#F8F6F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-xs font-bold tracking-widest uppercase text-[#C4A265] mb-3">Why Choose ALR</p>
+              <p className="text-xs font-bold tracking-widest uppercase text-[#C9A97A] mb-3">Why Choose ALR</p>
               <h2 className="text-3xl lg:text-4xl font-black text-brand mb-6">
                 Craftsmanship You Can See. Service You Can Trust.
               </h2>
-              <p className="text-[#8B7D72] leading-relaxed mb-8">
+              <p className="text-[#8B8FA0] leading-relaxed mb-8">
                 We&apos;re bathroom specialists — not generalist builders. Every project is managed personally,
                 with the same care and attention whether it&apos;s a compact ensuite or a full luxury renovation.
               </p>
@@ -244,7 +245,7 @@ export default function HomePage() {
                   "Free estimates for all new bathroom installations",
                 ].map((point) => (
                   <div key={point} className="flex items-start gap-3">
-                    <CheckCircle2 size={18} className="text-[#C4A265] shrink-0 mt-0.5" />
+                    <CheckCircle2 size={18} className="text-[#C9A97A] shrink-0 mt-0.5" />
                     <span className="text-sm text-brand leading-relaxed">{point}</span>
                   </div>
                 ))}
@@ -264,10 +265,10 @@ export default function HomePage() {
                 { title: "Project Managed", desc: "We coordinate every tradesperson on your behalf" },
                 { title: "5-Star Rated", desc: "Consistently rated excellent by our Surrey customers" },
               ].map((card) => (
-                <div key={card.title} className="bg-white p-6 border border-[#EDE9E3]">
-                  <div className="w-8 h-1 bg-[#C4A265] mb-4" />
+                <div key={card.title} className="bg-white p-6 border border-[#EDEAE3]">
+                  <div className="w-8 h-1 bg-[#C9A97A] mb-4" />
                   <h3 className="font-bold text-brand text-sm mb-2">{card.title}</h3>
-                  <p className="text-xs text-[#8B7D72] leading-relaxed">{card.desc}</p>
+                  <p className="text-xs text-[#8B8FA0] leading-relaxed">{card.desc}</p>
                 </div>
               ))}
             </div>
@@ -280,32 +281,32 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
-              <p className="text-xs font-bold tracking-widest uppercase text-[#C4A265] mb-2">Our Work</p>
+              <p className="text-xs font-bold tracking-widest uppercase text-[#C9A97A] mb-2">Our Work</p>
               <h2 className="text-3xl font-black text-brand">Recent Installations</h2>
             </div>
             <Link
               href="/gallery"
-              className="flex items-center gap-1.5 text-sm font-bold text-[#C4A265] hover:underline shrink-0"
+              className="flex items-center gap-1.5 text-sm font-bold text-[#C9A97A] hover:underline shrink-0"
             >
               View Full Gallery <ArrowRight size={14} />
             </Link>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {[1, 2, 3, 4].map((n) => (
-              <div
-                key={n}
-                className={`bg-[#EDE9E3] overflow-hidden ${n === 1 ? "md:col-span-2 md:row-span-2" : ""}`}
-                style={{ aspectRatio: n === 1 ? "1/1" : "4/3" }}
-              >
-                <div className="w-full h-full bg-gradient-to-br from-[#EDE9E3] to-[#D4C8BC] flex items-center justify-center">
-                  <span className="text-[#8B7D72] text-xs tracking-widest uppercase">Photo {n}</span>
-                </div>
-              </div>
-            ))}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            <div className="md:col-span-2 md:row-span-2 relative overflow-hidden" style={{ aspectRatio: "4/3" }}>
+              <Image src="/images/bathroom-4.jpg" alt="Luxury clawfoot bath with marble tiles and brass fittings" fill className="object-cover hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div className="relative overflow-hidden" style={{ aspectRatio: "4/3" }}>
+              <Image src="/images/bathroom-1.jpg" alt="Bespoke dark vanity with marble vessel sink and warm wall sconces" fill className="object-cover hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div className="relative overflow-hidden" style={{ aspectRatio: "4/3" }}>
+              <Image src="/images/bathroom-2.jpg" alt="Large luxury bathroom with stone tiles and designer bath" fill className="object-cover hover:scale-105 transition-transform duration-700" />
+            </div>
           </div>
-          <p className="text-center text-xs text-[#8B7D72] mt-4">
-            Add your bathroom installation photos to <code>/public/images/</code>
-          </p>
+          <div className="mt-3">
+            <div className="relative overflow-hidden w-full" style={{ aspectRatio: "21/6" }}>
+              <Image src="/images/bathroom-3.jpg" alt="Rose marble bathroom with brass rain shower and dark vanity" fill className="object-cover object-center hover:scale-105 transition-transform duration-700" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -313,25 +314,25 @@ export default function HomePage() {
       <section className="py-20 bg-brand">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-xs font-bold tracking-widest uppercase text-[#C4A265] mb-3">How It Works</p>
+            <p className="text-xs font-bold tracking-widest uppercase text-[#C9A97A] mb-3">How It Works</p>
             <h2 className="text-3xl lg:text-4xl font-black text-white">Simple. Stress-Free. Stunning.</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8 relative">
-            <div className="hidden md:block absolute top-8 left-1/4 right-1/4 h-px bg-[#2A2A2E]" />
+            <div className="hidden md:block absolute top-8 left-1/4 right-1/4 h-px bg-[#2A3355]" />
             {process.map((step) => (
               <div key={step.num} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 border border-[#C4A265] mb-6">
-                  <span className="text-2xl font-black text-[#C4A265]">{step.num}</span>
+                <div className="inline-flex items-center justify-center w-16 h-16 border border-[#C9A97A] mb-6">
+                  <span className="text-2xl font-black text-[#C9A97A]">{step.num}</span>
                 </div>
                 <h3 className="text-lg font-bold text-white mb-3">{step.title}</h3>
-                <p className="text-sm text-[#8B7D72] leading-relaxed">{step.desc}</p>
+                <p className="text-sm text-[#8B8FA0] leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
           <div className="text-center mt-12">
             <Link
               href="/free-estimate"
-              className="inline-flex items-center gap-2 bg-[#C4A265] hover:bg-[#B8935A] text-white font-bold px-8 py-4 transition-colors"
+              className="inline-flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] text-white font-bold px-8 py-4 transition-colors"
             >
               Start With a Free Estimate <ArrowRight size={16} />
             </Link>
@@ -340,36 +341,36 @@ export default function HomePage() {
       </section>
 
       {/* ── REVIEWS ── */}
-      <section className="py-20 bg-[#F9F7F3]">
+      <section className="py-20 bg-[#F8F6F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-xs font-bold tracking-widest uppercase text-[#C4A265] mb-3">Customer Reviews</p>
+            <p className="text-xs font-bold tracking-widest uppercase text-[#C9A97A] mb-3">Customer Reviews</p>
             <h2 className="text-3xl font-black text-brand mb-2">What Our Customers Say</h2>
             <div className="flex items-center justify-center gap-2 mt-3">
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={18} className="fill-[#C4A265] text-[#C4A265]" />
+                  <Star key={i} size={18} className="fill-[#C9A97A] text-[#C9A97A]" />
                 ))}
               </div>
-              <span className="text-sm text-[#8B7D72] font-medium">5.0 · 47 reviews on Google</span>
+              <span className="text-sm text-[#8B8FA0] font-medium">5.0 · 47 reviews on Google</span>
             </div>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {reviews.map((r) => (
-              <div key={r.name} className="bg-white p-8 border border-[#EDE9E3]">
-                <Quote size={24} className="text-[#C4A265] mb-4 opacity-60" />
-                <p className="text-sm text-[#8B7D72] leading-relaxed mb-6 italic">&ldquo;{r.text}&rdquo;</p>
-                <div className="border-t border-[#EDE9E3] pt-4 flex items-center justify-between">
+              <div key={r.name} className="bg-white p-8 border border-[#EDEAE3]">
+                <Quote size={24} className="text-[#C9A97A] mb-4 opacity-60" />
+                <p className="text-sm text-[#8B8FA0] leading-relaxed mb-6 italic">&ldquo;{r.text}&rdquo;</p>
+                <div className="border-t border-[#EDEAE3] pt-4 flex items-center justify-between">
                   <div>
                     <div className="font-bold text-sm text-brand">{r.name}</div>
-                    <div className="text-xs text-[#8B7D72] flex items-center gap-1 mt-0.5">
+                    <div className="text-xs text-[#8B8FA0] flex items-center gap-1 mt-0.5">
                       <MapPin size={10} />
                       {r.location}
                     </div>
                   </div>
                   <div className="flex gap-0.5">
                     {[...Array(r.stars)].map((_, i) => (
-                      <Star key={i} size={12} className="fill-[#C4A265] text-[#C4A265]" />
+                      <Star key={i} size={12} className="fill-[#C9A97A] text-[#C9A97A]" />
                     ))}
                   </div>
                 </div>
@@ -384,12 +385,12 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
             <div>
-              <p className="text-xs font-bold tracking-widest uppercase text-[#C4A265] mb-2">Coverage</p>
+              <p className="text-xs font-bold tracking-widest uppercase text-[#C9A97A] mb-2">Coverage</p>
               <h2 className="text-2xl font-black text-brand">Areas We Cover</h2>
             </div>
             <Link
               href="/areas"
-              className="flex items-center gap-1.5 text-sm font-bold text-[#C4A265] hover:underline"
+              className="flex items-center gap-1.5 text-sm font-bold text-[#C9A97A] hover:underline"
             >
               See all areas <ArrowRight size={14} />
             </Link>
@@ -398,9 +399,9 @@ export default function HomePage() {
             {areas.map((area) => (
               <div
                 key={area}
-                className="flex items-center gap-1.5 border border-[#EDE9E3] px-4 py-2.5 text-sm text-brand hover:border-[#C4A265] hover:text-[#C4A265] transition-colors cursor-default"
+                className="flex items-center gap-1.5 border border-[#EDEAE3] px-4 py-2.5 text-sm text-brand hover:border-[#C9A97A] hover:text-[#C9A97A] transition-colors cursor-default"
               >
-                <MapPin size={12} className="text-[#C4A265]" />
+                <MapPin size={12} className="text-[#C9A97A]" />
                 {area}
               </div>
             ))}
@@ -409,7 +410,7 @@ export default function HomePage() {
       </section>
 
       {/* ── CTA STRIP ── */}
-      <section className="py-16 bg-[#C4A265]">
+      <section className="py-16 bg-[#C9A97A]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-black text-white mb-4">
             Ready to Transform Your Bathroom?
@@ -421,7 +422,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/free-estimate"
-              className="inline-flex items-center justify-center gap-2 bg-white text-[#C4A265] font-bold px-8 py-4 hover:bg-[#F9F7F3] transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-white text-[#C9A97A] font-bold px-8 py-4 hover:bg-[#F8F6F2] transition-colors"
             >
               Book Free Estimate <ArrowRight size={16} />
             </Link>

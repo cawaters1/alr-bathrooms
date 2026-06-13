@@ -77,18 +77,18 @@ export default function FreeEstimateForm() {
 
   if (submitted) {
     return (
-      <div className="bg-white border border-[#EDE9E3] p-12 text-center">
-        <div className="inline-flex items-center justify-center w-16 h-16 bg-[#F9F7F3] mb-6">
-          <CheckCircle2 size={32} className="text-[#C4A265]" />
+      <div className="bg-white border border-[#EDEAE3] p-12 text-center">
+        <div className="inline-flex items-center justify-center w-16 h-16 bg-[#F8F6F2] mb-6">
+          <CheckCircle2 size={32} className="text-[#C9A97A]" />
         </div>
         <h2 className="text-2xl font-black text-brand mb-3">Enquiry Sent</h2>
-        <p className="text-[#8B7D72] leading-relaxed max-w-md mx-auto">
+        <p className="text-[#8B8FA0] leading-relaxed max-w-md mx-auto">
           Thank you for getting in touch. We&apos;ll contact you within 24 hours to arrange
           your free home visit.
         </p>
-        <p className="mt-4 text-sm text-[#8B7D72]">
+        <p className="mt-4 text-sm text-[#8B8FA0]">
           Prefer to speak now?{" "}
-          <a href="tel:07934679117" className="text-[#C4A265] font-semibold">
+          <a href="tel:07934679117" className="text-[#C9A97A] font-semibold">
             07934 679117
           </a>
         </p>
@@ -99,26 +99,26 @@ export default function FreeEstimateForm() {
   const progressPct = ((step - 1) / 2) * 100;
 
   return (
-    <div className="bg-white border border-[#EDE9E3]">
+    <div className="bg-white border border-[#EDEAE3]">
       {/* Progress */}
-      <div className="border-b border-[#EDE9E3] p-6">
+      <div className="border-b border-[#EDEAE3] p-6">
         <div className="flex items-center justify-between mb-3">
           {(["Project Details", "Preferences", "Contact Info"] as const).map((label, i) => (
             <div key={label} className="flex items-center gap-2">
               <div
                 className={`w-7 h-7 flex items-center justify-center text-xs font-bold border transition-colors ${
                   step > i + 1
-                    ? "bg-[#C4A265] border-[#C4A265] text-white"
+                    ? "bg-[#C9A97A] border-[#C9A97A] text-white"
                     : step === i + 1
-                    ? "border-[#C4A265] text-[#C4A265]"
-                    : "border-[#EDE9E3] text-[#8B7D72]"
+                    ? "border-[#C9A97A] text-[#C9A97A]"
+                    : "border-[#EDEAE3] text-[#8B8FA0]"
                 }`}
               >
                 {step > i + 1 ? "✓" : i + 1}
               </div>
               <span
                 className={`text-xs font-medium hidden sm:block ${
-                  step === i + 1 ? "text-brand" : "text-[#8B7D72]"
+                  step === i + 1 ? "text-brand" : "text-[#8B8FA0]"
                 }`}
               >
                 {label}
@@ -126,9 +126,9 @@ export default function FreeEstimateForm() {
             </div>
           ))}
         </div>
-        <div className="h-1 bg-[#EDE9E3] rounded-full">
+        <div className="h-1 bg-[#EDEAE3] rounded-full">
           <div
-            className="h-1 bg-[#C4A265] rounded-full transition-all duration-500"
+            className="h-1 bg-[#C9A97A] rounded-full transition-all duration-500"
             style={{ width: `${progressPct}%` }}
           />
         </div>
@@ -139,10 +139,10 @@ export default function FreeEstimateForm() {
         {step === 1 && (
           <div>
             <h2 className="text-xl font-black text-brand mb-1">About Your Project</h2>
-            <p className="text-sm text-[#8B7D72] mb-6">Tell us what you have in mind.</p>
+            <p className="text-sm text-[#8B8FA0] mb-6">Tell us what you have in mind.</p>
 
             <div className="mb-6">
-              <label className="block text-xs font-bold tracking-widest uppercase text-[#8B7D72] mb-3">
+              <label className="block text-xs font-bold tracking-widest uppercase text-[#8B8FA0] mb-3">
                 Type of Bathroom
               </label>
               <div className="grid grid-cols-2 gap-2">
@@ -153,8 +153,8 @@ export default function FreeEstimateForm() {
                     onClick={() => set("bathroomType")(t)}
                     className={`text-left text-sm px-4 py-3 border transition-colors ${
                       form.bathroomType === t
-                        ? "border-[#C4A265] bg-[#F9F7F3] text-brand font-semibold"
-                        : "border-[#EDE9E3] text-[#8B7D72] hover:border-[#C4A265]"
+                        ? "border-[#C9A97A] bg-[#F8F6F2] text-brand font-semibold"
+                        : "border-[#EDEAE3] text-[#8B8FA0] hover:border-[#C9A97A]"
                     }`}
                   >
                     {t}
@@ -164,7 +164,7 @@ export default function FreeEstimateForm() {
             </div>
 
             <div className="mb-8">
-              <label className="block text-xs font-bold tracking-widest uppercase text-[#8B7D72] mb-3">
+              <label className="block text-xs font-bold tracking-widest uppercase text-[#8B8FA0] mb-3">
                 Anything Else? (Optional)
               </label>
               <textarea
@@ -172,7 +172,7 @@ export default function FreeEstimateForm() {
                 value={form.message}
                 onChange={(e) => set("message")(e.target.value)}
                 placeholder="Tell us more about your project, ideas or any specific requirements..."
-                className="w-full border border-[#EDE9E3] px-4 py-3 text-sm text-brand focus:border-[#C4A265] outline-none resize-none"
+                className="w-full border border-[#EDEAE3] px-4 py-3 text-sm text-brand focus:border-[#C9A97A] outline-none resize-none"
               />
             </div>
 
@@ -180,7 +180,7 @@ export default function FreeEstimateForm() {
               type="button"
               disabled={!form.bathroomType}
               onClick={() => setStep(2)}
-              className="flex items-center gap-2 bg-[#C4A265] hover:bg-[#B8935A] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-6 py-3 transition-colors"
+              className="flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-6 py-3 transition-colors"
             >
               Next Step <ArrowRight size={15} />
             </button>
@@ -191,10 +191,10 @@ export default function FreeEstimateForm() {
         {step === 2 && (
           <div>
             <h2 className="text-xl font-black text-brand mb-1">Your Preferences</h2>
-            <p className="text-sm text-[#8B7D72] mb-6">Help us understand your budget and timescale.</p>
+            <p className="text-sm text-[#8B8FA0] mb-6">Help us understand your budget and timescale.</p>
 
             <div className="mb-6">
-              <label className="block text-xs font-bold tracking-widest uppercase text-[#8B7D72] mb-3">
+              <label className="block text-xs font-bold tracking-widest uppercase text-[#8B8FA0] mb-3">
                 Budget
               </label>
               <div className="grid grid-cols-2 gap-2">
@@ -205,8 +205,8 @@ export default function FreeEstimateForm() {
                     onClick={() => set("budget")(b)}
                     className={`text-left text-sm px-4 py-3 border transition-colors ${
                       form.budget === b
-                        ? "border-[#C4A265] bg-[#F9F7F3] text-brand font-semibold"
-                        : "border-[#EDE9E3] text-[#8B7D72] hover:border-[#C4A265]"
+                        ? "border-[#C9A97A] bg-[#F8F6F2] text-brand font-semibold"
+                        : "border-[#EDEAE3] text-[#8B8FA0] hover:border-[#C9A97A]"
                     }`}
                   >
                     {b}
@@ -216,7 +216,7 @@ export default function FreeEstimateForm() {
             </div>
 
             <div className="mb-8">
-              <label className="block text-xs font-bold tracking-widest uppercase text-[#8B7D72] mb-3">
+              <label className="block text-xs font-bold tracking-widest uppercase text-[#8B8FA0] mb-3">
                 When Are You Looking to Start?
               </label>
               <div className="grid grid-cols-2 gap-2">
@@ -227,8 +227,8 @@ export default function FreeEstimateForm() {
                     onClick={() => set("timescale")(t)}
                     className={`text-left text-sm px-4 py-3 border transition-colors ${
                       form.timescale === t
-                        ? "border-[#C4A265] bg-[#F9F7F3] text-brand font-semibold"
-                        : "border-[#EDE9E3] text-[#8B7D72] hover:border-[#C4A265]"
+                        ? "border-[#C9A97A] bg-[#F8F6F2] text-brand font-semibold"
+                        : "border-[#EDEAE3] text-[#8B8FA0] hover:border-[#C9A97A]"
                     }`}
                   >
                     {t}
@@ -241,7 +241,7 @@ export default function FreeEstimateForm() {
               <button
                 type="button"
                 onClick={() => setStep(1)}
-                className="border border-[#EDE9E3] text-brand font-bold px-6 py-3 hover:border-brand transition-colors text-sm"
+                className="border border-[#EDEAE3] text-brand font-bold px-6 py-3 hover:border-brand transition-colors text-sm"
               >
                 Back
               </button>
@@ -249,7 +249,7 @@ export default function FreeEstimateForm() {
                 type="button"
                 disabled={!form.budget || !form.timescale}
                 onClick={() => setStep(3)}
-                className="flex items-center gap-2 bg-[#C4A265] hover:bg-[#B8935A] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-6 py-3 transition-colors"
+                className="flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-6 py-3 transition-colors"
               >
                 Next Step <ArrowRight size={15} />
               </button>
@@ -261,12 +261,12 @@ export default function FreeEstimateForm() {
         {step === 3 && (
           <div>
             <h2 className="text-xl font-black text-brand mb-1">Your Contact Details</h2>
-            <p className="text-sm text-[#8B7D72] mb-6">So we can get in touch to arrange your free visit.</p>
+            <p className="text-sm text-[#8B8FA0] mb-6">So we can get in touch to arrange your free visit.</p>
 
             <div className="space-y-4 mb-8">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-bold tracking-widest uppercase text-[#8B7D72] mb-1.5">
+                  <label className="block text-xs font-bold tracking-widest uppercase text-[#8B8FA0] mb-1.5">
                     Full Name *
                   </label>
                   <input
@@ -275,11 +275,11 @@ export default function FreeEstimateForm() {
                     value={form.name}
                     onChange={(e) => set("name")(e.target.value)}
                     placeholder="Your name"
-                    className="w-full border border-[#EDE9E3] px-4 py-3 text-sm text-brand focus:border-[#C4A265] outline-none"
+                    className="w-full border border-[#EDEAE3] px-4 py-3 text-sm text-brand focus:border-[#C9A97A] outline-none"
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold tracking-widest uppercase text-[#8B7D72] mb-1.5">
+                  <label className="block text-xs font-bold tracking-widest uppercase text-[#8B8FA0] mb-1.5">
                     Phone Number *
                   </label>
                   <input
@@ -288,12 +288,12 @@ export default function FreeEstimateForm() {
                     value={form.phone}
                     onChange={(e) => set("phone")(e.target.value)}
                     placeholder="07..."
-                    className="w-full border border-[#EDE9E3] px-4 py-3 text-sm text-brand focus:border-[#C4A265] outline-none"
+                    className="w-full border border-[#EDEAE3] px-4 py-3 text-sm text-brand focus:border-[#C9A97A] outline-none"
                   />
                 </div>
               </div>
               <div>
-                <label className="block text-xs font-bold tracking-widest uppercase text-[#8B7D72] mb-1.5">
+                <label className="block text-xs font-bold tracking-widest uppercase text-[#8B8FA0] mb-1.5">
                   Email Address *
                 </label>
                 <input
@@ -302,11 +302,11 @@ export default function FreeEstimateForm() {
                   value={form.email}
                   onChange={(e) => set("email")(e.target.value)}
                   placeholder="you@example.com"
-                  className="w-full border border-[#EDE9E3] px-4 py-3 text-sm text-brand focus:border-[#C4A265] outline-none"
+                  className="w-full border border-[#EDEAE3] px-4 py-3 text-sm text-brand focus:border-[#C9A97A] outline-none"
                 />
               </div>
               <div>
-                <label className="block text-xs font-bold tracking-widest uppercase text-[#8B7D72] mb-1.5">
+                <label className="block text-xs font-bold tracking-widest uppercase text-[#8B8FA0] mb-1.5">
                   Property Address
                 </label>
                 <input
@@ -314,7 +314,7 @@ export default function FreeEstimateForm() {
                   value={form.address}
                   onChange={(e) => set("address")(e.target.value)}
                   placeholder="Street, Town, Postcode"
-                  className="w-full border border-[#EDE9E3] px-4 py-3 text-sm text-brand focus:border-[#C4A265] outline-none"
+                  className="w-full border border-[#EDEAE3] px-4 py-3 text-sm text-brand focus:border-[#C9A97A] outline-none"
                 />
               </div>
             </div>
@@ -323,21 +323,21 @@ export default function FreeEstimateForm() {
               <button
                 type="button"
                 onClick={() => setStep(2)}
-                className="border border-[#EDE9E3] text-brand font-bold px-6 py-3 hover:border-brand transition-colors text-sm"
+                className="border border-[#EDEAE3] text-brand font-bold px-6 py-3 hover:border-brand transition-colors text-sm"
               >
                 Back
               </button>
               <button
                 type="submit"
                 disabled={submitting || !form.name || !form.phone || !form.email}
-                className="flex items-center gap-2 bg-[#C4A265] hover:bg-[#B8935A] disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold px-6 py-3 transition-colors"
+                className="flex items-center gap-2 bg-[#C9A97A] hover:bg-[#B8955A] disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold px-6 py-3 transition-colors"
               >
                 {submitting ? "Sending..." : "Request Free Estimate"}
                 {!submitting && <ArrowRight size={15} />}
               </button>
             </div>
 
-            <p className="mt-4 text-xs text-[#8B7D72]">
+            <p className="mt-4 text-xs text-[#8B8FA0]">
               By submitting this form you agree to be contacted by ALR Bathrooms regarding your enquiry.
             </p>
           </div>

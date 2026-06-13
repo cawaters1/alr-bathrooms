@@ -8,13 +8,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brand: "#1C1C1E",
-        gold: "#C4A265",
-        "gold-light": "#D4B87A",
-        stone: "#8B7D72",
-        cream: "#F9F7F3",
-        "cream-dark": "#EDE9E3",
-        "dark-bg": "#111114",
+        brand: "#1B2744",
+        gold: "#C9A97A",
+        "gold-light": "#E8D5B0",
+        stone: "#8B8FA0",
+        cream: "#F8F6F2",
+        "cream-dark": "#EDEAE3",
+        "dark-bg": "#111827",
       },
       fontFamily: {
         sans: ["system-ui", "-apple-system", "sans-serif"],

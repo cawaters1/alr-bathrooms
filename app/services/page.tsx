@@ -45,11 +45,11 @@ export default function ServicesPage() {
     <>
       <section className="bg-brand py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-xs font-bold tracking-widest uppercase text-[#C4A265] mb-3">Services</p>
+          <p className="text-xs font-bold tracking-widest uppercase text-[#C9A97A] mb-3">Services</p>
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-4">
             What We Offer
           </h1>
-          <p className="text-[#8B7D72] text-lg max-w-2xl leading-relaxed">
+          <p className="text-[#8B8FA0] text-lg max-w-2xl leading-relaxed">
             A complete bathroom service — from initial design through to the finishing touches.
             One company. One point of contact. Outstanding results.
           </p>
@@ -64,36 +64,36 @@ export default function ServicesPage() {
               className={`grid lg:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
             >
               <div className={i % 2 === 1 ? "lg:order-2" : ""}>
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-[#F9F7F3] mb-6">
-                  <s.icon size={22} className="text-[#C4A265]" />
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-[#F8F6F2] mb-6">
+                  <s.icon size={22} className="text-[#C9A97A]" />
                 </div>
-                <p className="text-xs font-bold tracking-widest uppercase text-[#C4A265] mb-2">{s.title}</p>
+                <p className="text-xs font-bold tracking-widest uppercase text-[#C9A97A] mb-2">{s.title}</p>
                 <h2 className="text-3xl font-black text-brand mb-4">{s.headline}</h2>
-                <p className="text-[#8B7D72] leading-relaxed mb-6">{s.desc}</p>
+                <p className="text-[#8B8FA0] leading-relaxed mb-6">{s.desc}</p>
                 <ul className="space-y-3 mb-8">
                   {s.points.map((p) => (
                     <li key={p} className="flex items-center gap-2.5 text-sm text-brand">
-                      <CheckCircle2 size={15} className="text-[#C4A265] shrink-0" />
+                      <CheckCircle2 size={15} className="text-[#C9A97A] shrink-0" />
                       {p}
                     </li>
                   ))}
                 </ul>
                 <Link
                   href={s.href}
-                  className="inline-flex items-center gap-2 bg-brand hover:bg-[#2C2C2E] text-white font-bold px-6 py-3 transition-colors"
+                  className="inline-flex items-center gap-2 bg-brand hover:bg-[#243360] text-white font-bold px-6 py-3 transition-colors"
                 >
                   Learn More <ArrowRight size={14} />
                 </Link>
               </div>
-              <div className={`bg-[#EDE9E3] aspect-[4/3] flex items-center justify-center ${i % 2 === 1 ? "lg:order-1" : ""}`}>
-                <span className="text-[#8B7D72] text-sm tracking-widest uppercase">Photo</span>
+              <div className={`bg-[#EDEAE3] aspect-[4/3] flex items-center justify-center ${i % 2 === 1 ? "lg:order-1" : ""}`}>
+                <span className="text-[#8B8FA0] text-sm tracking-widest uppercase">Photo</span>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="py-16 bg-[#C4A265]">
+      <section className="py-16 bg-[#C9A97A]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-black text-white mb-4">Free Estimates for All New Bathrooms</h2>
           <p className="text-white/80 mb-8">
@@ -101,7 +101,7 @@ export default function ServicesPage() {
           </p>
           <Link
             href="/free-estimate"
-            className="inline-flex items-center gap-2 bg-white text-[#C4A265] font-bold px-8 py-4 hover:bg-[#F9F7F3] transition-colors"
+            className="inline-flex items-center gap-2 bg-white text-[#C9A97A] font-bold px-8 py-4 hover:bg-[#F8F6F2] transition-colors"
           >
             Book Free Estimate <ArrowRight size={15} />
           </Link>
