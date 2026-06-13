@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
+import GalleryCarousel from "@/components/GalleryCarousel";
 import {
   Star,
   CheckCircle2,
@@ -12,6 +12,13 @@ import {
   MapPin,
   Quote,
 } from "lucide-react";
+
+const galleryImages = [
+  { src: "/images/bathroom-4.jpg", alt: "Roll-top clawfoot bath with Arabescato marble and polished brass fittings", title: "Victorian Marble Suite", location: "Richmond", detail: "Arabescato marble · Clawfoot bath · Polished brass" },
+  { src: "/images/bathroom-1.jpg", alt: "Dark navy vanity with Carrara marble vessel sink and warm wall sconces", title: "Bespoke Vanity", location: "Cobham, Surrey", detail: "Carrara vessel sink · Brass tap · Bespoke cabinetry" },
+  { src: "/images/bathroom-2.jpg", alt: "Spacious luxury bathroom with large stone tiles and designer bath surround", title: "Contemporary Stone Suite", location: "Esher, Surrey", detail: "Large-format stone · Brass hardware · Wall-hung sanitaryware" },
+  { src: "/images/bathroom-3.jpg", alt: "Rose marble bathroom with brass rain shower and dark vanity unit", title: "Rose Marble & Brass", location: "Wimbledon", detail: "Rose onyx marble · Brass rain shower · Chevron floor tiles" },
+];
 
 export const metadata: Metadata = {
   title: "ALR Bathrooms | Bathroom Design & Installation Surrey",
@@ -291,21 +298,8 @@ export default function HomePage() {
               View Full Gallery <ArrowRight size={14} />
             </Link>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            <div className="md:col-span-2 md:row-span-2 relative overflow-hidden" style={{ aspectRatio: "4/3" }}>
-              <Image src="/images/bathroom-4.jpg" alt="Luxury clawfoot bath with marble tiles and brass fittings" fill className="object-cover hover:scale-105 transition-transform duration-700" />
-            </div>
-            <div className="relative overflow-hidden" style={{ aspectRatio: "4/3" }}>
-              <Image src="/images/bathroom-1.jpg" alt="Bespoke dark vanity with marble vessel sink and warm wall sconces" fill className="object-cover hover:scale-105 transition-transform duration-700" />
-            </div>
-            <div className="relative overflow-hidden" style={{ aspectRatio: "4/3" }}>
-              <Image src="/images/bathroom-2.jpg" alt="Large luxury bathroom with stone tiles and designer bath" fill className="object-cover hover:scale-105 transition-transform duration-700" />
-            </div>
-          </div>
-          <div className="mt-3">
-            <div className="relative overflow-hidden w-full" style={{ aspectRatio: "21/6" }}>
-              <Image src="/images/bathroom-3.jpg" alt="Rose marble bathroom with brass rain shower and dark vanity" fill className="object-cover object-center hover:scale-105 transition-transform duration-700" />
-            </div>
+          <div className="max-w-2xl mx-auto">
+            <GalleryCarousel images={galleryImages} showCaptions={true} />
           </div>
         </div>
       </section>
