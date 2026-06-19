@@ -86,7 +86,7 @@ const reviews = [
 const areas = [
   "Shepperton", "Cobham", "Esher", "Guildford",
   "Woking", "Richmond", "Wimbledon", "Kingston upon Thames",
-  "Walton-on-Thames", "Weybridge", "Surbiton", "New Malden",
+  "Staines upon Thames", "Walton-on-Thames", "Weybridge", "Surbiton", "New Malden",
 ];
 
 const process = [

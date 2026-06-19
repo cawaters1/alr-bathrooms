@@ -5,7 +5,7 @@ import { MapPin, ArrowRight, Phone } from "lucide-react";
 export const metadata: Metadata = {
   title: "Areas Covered | ALR Bathrooms Surrey",
   description:
-    "ALR Bathrooms installs and designs bathrooms across Surrey. We cover Shepperton, Cobham, Esher, Guildford, Woking, Richmond, Wimbledon, Kingston and surrounding areas.",
+    "ALR Bathrooms installs and designs bathrooms across Surrey. We cover Shepperton, Cobham, Esher, Guildford, Woking, Richmond, Wimbledon, Kingston, Staines upon Thames and surrounding areas.",
   alternates: { canonical: "https://www.alrbathrooms.com/areas" },
 };
 
@@ -42,13 +42,17 @@ const primaryAreas = [
     name: "Kingston upon Thames",
     desc: "We regularly work in Kingston and the surrounding areas including Surbiton and New Malden.",
   },
+  {
+    name: "Staines upon Thames",
+    desc: "Bathroom design and installation throughout Staines upon Thames and the surrounding Spelthorne area.",
+  },
 ];
 
 const additionalAreas = [
   "Walton-on-Thames", "Weybridge", "Surbiton", "New Malden",
   "Claygate", "Long Ditton", "Thames Ditton", "East Molesey",
   "West Molesey", "Hampton", "Sunbury-on-Thames", "Chertsey",
-  "Staines-upon-Thames", "Egham", "Virginia Water", "Leatherhead",
+  "Egham", "Virginia Water", "Leatherhead",
 ];
 
 export default function AreasPage() {

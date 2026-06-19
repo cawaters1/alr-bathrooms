@@ -13,6 +13,7 @@ const services = [
 const areas = [
   "Shepperton", "Cobham", "Esher", "Guildford",
   "Woking", "Richmond", "Wimbledon", "Kingston",
+  "Staines upon Thames",
 ];
 
 export default function Footer() {

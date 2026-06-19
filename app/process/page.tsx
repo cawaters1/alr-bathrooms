@@ -49,7 +49,7 @@ const steps = [
   {
     num: "04",
     title: "Installation",
-    duration: "7–14 Days Typically",
+    duration: "2–4 Weeks Typically",
     desc: "Our skilled team carries out the full installation — tiling, plumbing, electrics, furniture fitting and finishing touches. We work cleanly and respectfully in your home throughout.",
     detail: [
       "Strip-out and waste removal",
@@ -62,9 +62,9 @@ const steps = [
     num: "05",
     title: "Handover",
     duration: "Final Day",
-    desc: "We complete a full snagging check, carry out a thorough clean and walk you through your new bathroom. We don't leave until you're completely happy.",
+    desc: "We complete a full quality installation, carry out a thorough clean and walk you through your new bathroom. We don't leave until you're completely happy.",
     detail: [
-      "Full snag check and quality inspection",
+      "Full quality installation check",
       "Thorough clean throughout",
       "Walkthrough of your new bathroom",
       "Handover of any product manuals and warranties",

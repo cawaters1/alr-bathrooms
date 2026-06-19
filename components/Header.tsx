@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 
 const nav = [
@@ -61,18 +62,15 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 shrink-0">
-              <div className="bg-brand px-3 py-2 flex items-center gap-2.5">
-                <svg width="22" height="22" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="20" cy="20" r="19" stroke="#E8D5B0" strokeWidth="1.5" fill="none"/>
-                  <path d="M20 6 C20 6 12 18 12 24 C12 29.5 15.6 34 20 34 C24.4 34 28 29.5 28 24 C28 18 20 6 20 6Z" fill="#E8D5B0"/>
-                  <path d="M20 14 C20 14 15 22 15 26 C15 28.8 17.2 31 20 31 C22.8 31 25 28.8 25 26 C25 22 20 14 20 14Z" fill="#1B2744"/>
-                </svg>
-                <div>
-                  <div className="font-black text-sm text-[#E8D5B0] tracking-widest leading-none">ALR</div>
-                  <div className="text-[8px] font-semibold text-[#C9A97A] tracking-widest uppercase leading-none mt-0.5">Bathrooms &amp; Design</div>
-                </div>
-              </div>
+            <Link href="/" className="flex items-center shrink-0">
+              <Image
+                src="/images/alr-logo.jpg"
+                alt="ALR Bathrooms & Design"
+                width={180}
+                height={56}
+                className="h-14 w-auto object-contain"
+                priority
+              />
             </Link>
 
             {/* Desktop nav */}
