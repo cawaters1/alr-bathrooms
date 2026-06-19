@@ -22,7 +22,7 @@ const images = [
     src: "/images/bathroom-5.jpg",
     alt: "Spacious marble bathroom with freestanding bath, brass-framed glass shower enclosure and smart TV",
     title: "Marble Master Suite",
-    location: "Guildford, Surrey",
+    location: "Oxshott",
     detail: "Marble tiles · Brass shower enclosure · Freestanding bath · Smart TV",
   },
   {
@@ -36,7 +36,7 @@ const images = [
     src: "/images/bathroom-7.jpg",
     alt: "Marble shower enclosure with brass frame, overhead rain shower and illuminated niche shelf",
     title: "Brass-Framed Shower",
-    location: "Cobham, Surrey",
+    location: "Oxshott",
     detail: "Large marble tiles · Brass frame · Rain shower · Illuminated niche shelf",
   },
   {
